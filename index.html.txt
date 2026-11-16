@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Wewa Thaula Guest Inn</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px));}.pt-safe{padding-top:calc(env(safe-area-inset-top,0px));}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-background": "#121b2e", "surface-container-low": "#f1f3ff", "primary-fixed": "#e3dfff", "secondary": "#712edd", "error-container": "#ffdad6", "on-primary-fixed": "#100069", "surface-container-lowest": "#ffffff", "secondary-fixed": "#ebddff", "inverse-on-surface": "#edf0ff", "on-error": "#ffffff", "surface-tint": "#5148d7", "on-tertiary-fixed": "#001f26", "on-secondary-container": "#fffbff", "primary-fixed-dim": "#c3c0ff", "secondary-fixed-dim": "#d3bbff", "error": "#ba1a1a", "tertiary": "#00414d", "inverse-surface": "#273044", "surface-bright": "#f9f9ff", "on-tertiary-fixed-variant": "#004e5c", "tertiary-fixed-dim": "#4cd7f6", "tertiary-container": "#005a6a", "surface-container-highest": "#d9e2fc", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "on-secondary-fixed": "#250059", "on-primary-container": "#c1beff", "background": "#f9f9ff", "inverse-primary": "#c3c0ff", "outline-variant": "#c7c4d7", "on-surface": "#121b2e", "on-tertiary-container": "#4ad5f4", "on-primary": "#ffffff", "outline": "#777586", "tertiary-fixed": "#acedff", "on-secondary-fixed-variant": "#5b00c5", "secondary-container": "#8b4ef7", "surface": "#f9f9ff", "primary": "#2a14b4", "on-primary-fixed-variant": "#372abf", "surface-dim": "#d1daf4", "on-error-container": "#93000a", "primary-container": "#4338ca", "on-surface-variant": "#464554", "surface-container-high": "#e1e8ff", "surface-variant": "#d9e2fc", "surface-container": "#e9edff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "3rem", "space-xl": "2.5rem", "margin-mobile": "1.25rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter-mobile": "1rem", "space-2xl": "4rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-md": "1rem" }, fontFamily: { "headline-lg": ["Playfair Display"], "display-lg": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "display-lg-mobile": ["Playfair Display"], "label-md": ["Inter"], "label-lg": ["Inter"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "headline-md": ["Playfair Display"] }, fontSize: { "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.01em", fontWeight: "500" }], "display-lg": ["56px", { lineHeight: "68px", letterSpacing: "-0.02em", fontWeight: "600" }], "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "0em", fontWeight: "500" }], "display-lg-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "500" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "400" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "400" }], "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "600" }], "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "0em", fontWeight: "500" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed flex flex-col min-h-screen relative"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(42,20,180,0.06)] pt-safe transition-all"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button aria-label="Open menu" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors active:scale-95" id="menu-btn" onclick="document.getElementById('mobile-drawer').classList.remove('-translate-x-full'); document.getElementById('drawer-backdrop').classList.remove('opacity-0', 'pointer-events-none');"><span class="material-symbols-outlined text-[24px]">menu</span></button><a class="flex items-center gap-space-xs focus:outline-none" data-path="home" href="#"><img alt="Wewa Thaula Guest Inn Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDtRyZvlff47zC9wWr3del62hpKCUyyP-FYcqQ6hHTw08_AK7_HW5CgMJhdLmxG0x4BpRkUgqoW0uvvhrAzuxcNz62qCzotIxka6YlPAYo_HsLISsvwDPOVaEOPl0fp1PR0ukFIMmpBTs0dXUDHiwJk817ErfGTlOnP6MBqoGLvHWLcJWv1yUB68H2n8HUMHqBWDvj1NMdHxcTTUXwNidSxL9iEMT67ElfNe1rHlc9EQA"/><div class="flex flex-col"><span class="font-headline-sm text-label-lg font-bold tracking-tight text-on-surface leading-tight">Wewa Thaula</span><span class="font-label-sm text-label-sm tracking-wider uppercase text-tertiary font-semibold">Lake Sanctuary</span></div></a></div><div class="flex items-center gap-space-xs"><span class="hidden sm:inline-block font-headline-sm text-label-md text-on-surface-variant font-medium truncate max-w-[120px]">Home</span><a aria-label="Quick Call" class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-container-low text-primary hover:bg-primary-fixed transition-colors active:scale-95 shadow-[0_2px_8px_rgba(42,20,180,0.08)]" href="tel:0715588766"><span class="material-symbols-outlined text-[20px]">call</span></a><a class="hidden xs:inline-flex items-center justify-center px-space-md py-space-xs rounded-full bg-gradient-to-r from-primary-container to-secondary text-on-primary font-label-md shadow-[0_4px_14px_rgba(6,182,212,0.25)] hover:shadow-lg transition-all active:scale-95" data-path="booking-enquiry" href="#">Book</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" id="drawer-backdrop" onclick="document.getElementById('mobile-drawer').classList.add('-translate-x-full'); this.classList.add('opacity-0', 'pointer-events-none');"></div><aside class="fixed top-0 bottom-0 left-0 w-[84%] max-w-[340px] z-50 bg-surface-bright shadow-[0_20px_50px_rgba(18,27,46,0.2)] transform -translate-x-full transition-transform duration-300 ease-out flex flex-col justify-between pt-safe pb-safe" id="mobile-drawer"><div class="p-space-lg flex flex-col gap-space-lg"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs"><img alt="Wewa Thaula Guest Inn Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDtRyZvlff47zC9wWr3del62hpKCUyyP-FYcqQ6hHTw08_AK7_HW5CgMJhdLmxG0x4BpRkUgqoW0uvvhrAzuxcNz62qCzotIxka6YlPAYo_HsLISsvwDPOVaEOPl0fp1PR0ukFIMmpBTs0dXUDHiwJk817ErfGTlOnP6MBqoGLvHWLcJWv1yUB68H2n8HUMHqBWDvj1NMdHxcTTUXwNidSxL9iEMT67ElfNe1rHlc9EQA"/><span class="font-headline-md text-headline-sm text-on-surface font-semibold">Wewa Thaula</span></div><button class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container active:scale-95" onclick="document.getElementById('mobile-drawer').classList.add('-translate-x-full'); document.getElementById('drawer-backdrop').classList.add('opacity-0', 'pointer-events-none');"><span class="material-symbols-outlined text-[22px]">close</span></button></div><div class="p-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-sm"><span class="material-symbols-outlined text-tertiary-container text-[20px]">water_lux</span><div class="flex flex-col"><span class="font-label-sm text-tertiary uppercase tracking-wider font-semibold">Lakeside Tranquility</span><span class="font-body-sm text-on-surface-variant">Tissamaharama, Sri Lanka</span></div></div><nav class="flex flex-col gap-space-xs mt-space-sm"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface hover:bg-surface-container-high transition-colors font-headline-sm text-body-lg" data-path="home" href="#" onclick="document.getElementById('mobile-drawer').classList.add('-translate-x-full'); document.getElementById('drawer-backdrop').classList.add('opacity-0', 'pointer-events-none');"><span class="material-symbols-outlined text-primary text-[22px]">cottage</span><span>Home</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface hover:bg-surface-container-high transition-colors font-headline-sm text-body-lg" data-path="about-us" href="#" onclick="document.getElementById('mobile-drawer').classList.add('-translate-x-full'); document.getElementById('drawer-backdrop').classList.add('opacity-0', 'pointer-events-none');"><span class="material-symbols-outlined text-primary text-[22px]">spa</span><span>About Us</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface hover:bg-surface-container-high transition-colors font-headline-sm text-body-lg" data-path="rooms" href="#" onclick="document.getElementById('mobile-drawer').classList.add('-translate-x-full'); document.getElementById('drawer-backdrop').classList.add('opacity-0', 'pointer-events-none');"><span class="material-symbols-outlined text-primary text-[22px]">king_bed</span><span>Rooms</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface hover:bg-surface-container-high transition-colors font-headline-sm text-body-lg" data-path="dining" href="#" onclick="document.getElementById('mobile-drawer').classList.add('-translate-x-full'); document.getElementById('drawer-backdrop').classList.add('opacity-0', 'pointer-events-none');"><span class="material-symbols-outlined text-primary text-[22px]">restaurant</span><span>Dining</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface hover:bg-surface-container-high transition-colors font-headline-sm text-body-lg" data-path="gallery" href="#" onclick="document.getElementById('mobile-drawer').classList.add('-translate-x-full'); document.getElementById('drawer-backdrop').classList.add('opacity-0', 'pointer-events-none');"><span class="material-symbols-outlined text-primary text-[22px]">photo_library</span><span>Gallery</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface hover:bg-surface-container-high transition-colors font-headline-sm text-body-lg" data-path="location" href="#" onclick="document.getElementById('mobile-drawer').classList.add('-translate-x-full'); document.getElementById('drawer-backdrop').classList.add('opacity-0', 'pointer-events-none');"><span class="material-symbols-outlined text-primary text-[22px]">explore</span><span>Location</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface hover:bg-surface-container-high transition-colors font-headline-sm text-body-lg" data-path="contact" href="#" onclick="document.getElementById('mobile-drawer').classList.add('-translate-x-full'); document.getElementById('drawer-backdrop').classList.add('opacity-0', 'pointer-events-none');"><span class="material-symbols-outlined text-primary text-[22px]">support_agent</span><span>Contact</span></a></nav></div><div class="p-space-lg bg-surface-container-low/80 flex flex-col gap-space-sm"><div class="font-label-sm text-on-surface-variant uppercase tracking-wider">Direct Reservations</div><div class="flex flex-col gap-space-xs"><a class="flex items-center gap-space-sm text-on-surface font-label-lg hover:text-primary" href="tel:0715588766"><span class="material-symbols-outlined text-primary text-[18px]">phone_in_talk</span> 071 558 8766</a><a class="flex items-center gap-space-sm text-on-surface font-label-lg hover:text-primary" href="tel:0773682266"><span class="material-symbols-outlined text-primary text-[18px]">phone_in_talk</span> 077 368 2266</a></div><a class="w-full py-space-sm mt-space-xs rounded-xl bg-gradient-to-r from-primary-container to-secondary text-on-primary text-center font-label-lg font-bold shadow-[0_4px_16px_rgba(6,182,212,0.25)]" data-path="booking-enquiry" href="#">Book Now</a></div></aside><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- 1. HERO SECTION (#home) -->
+<section class="relative w-full overflow-hidden" id="home">
+<div class="relative w-full min-h-[580px] sm:min-h-[640px] flex flex-col justify-end p-margin-mobile pb-space-xl">
+<!-- Background Image with Scrim -->
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105" data-alt="A tranquil Sri Lankan freshwater lake at sunrise with mist floating above calm water, a traditional wooden pier with thatch hut gazebo extending into the lake, lush palm trees, distant green hills, warm golden morning light reflecting on water, cinematic luxury retreat landscape." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBEvzvOmk84UBvnrwn4VYJqGWiKBc0Qxl4eqShoU2W22vBpdkwWm1Q5xUvAePurTlm3O1cIR46fBeSlBy5cokQfktefbpPnLlBIsSFWEmQBCf3sIEqo6JiTxCVe0ewYpP4R9f7saPwEDy8J-Fc5Qz2vN2l_HKFkUm5KfHKWgwxObJxF6zRXhFLDFs0mGTdFHnxsFQaSm9aw5yh3UP_sfuu39vi3xGLAsm1tkYOsgbah')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface via-primary-container/45 to-transparent"></div>
+<div class="absolute inset-0 bg-radial-at-t from-transparent via-transparent to-inverse-surface/60"></div>
+<!-- Hero Content -->
+<div class="relative z-10 flex flex-col gap-space-sm max-w-xl text-surface-bright">
+<!-- Sanctuary Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-bright/20 backdrop-blur-md w-fit shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim animate-ping"></span>
+<span class="font-label-sm uppercase tracking-wider text-tertiary-fixed font-semibold">Your Peaceful Nature Retreat</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile sm:font-headline-lg sm:text-headline-lg text-surface-bright tracking-tight leading-tight">
+          Escape to Nature.<br/><span class="italic font-display-lg-mobile text-tertiary-fixed font-normal">Experience True Comfort.</span>
+</h1>
+<p class="font-body-md text-surface-container-high text-body-md leading-relaxed">
+          Discover peaceful moments, warm hospitality, and unforgettable stays at Wewa Thaula Guest Inn. Your perfect getaway surrounded by the quiet beauty of ancient waters.
+        </p>
+<!-- CTA Cluster -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="inline-flex items-center justify-center px-space-lg py-3 rounded-full bg-gradient-to-r from-primary-container to-secondary text-on-primary font-label-lg font-bold shadow-[0_4px_20px_rgba(6,182,212,0.35)] active:scale-95 transition-all" href="#rooms">
+<span>Explore Our Rooms</span>
+<span class="material-symbols-outlined ml-1.5 text-[18px]">arrow_downward</span>
+</a>
+<a class="inline-flex items-center justify-center px-space-lg py-3 rounded-full bg-surface-bright/20 hover:bg-surface-bright/30 backdrop-blur-md text-surface-bright font-label-lg font-semibold active:scale-95 transition-all shadow-sm" href="#contact">
+            Book Your Stay
+          </a>
+</div>
+</div>
+</div>
+<!-- Modern Floating Booking Widget Card -->
+<div class="px-margin-mobile -mt-8 relative z-20">
+<div class="bg-surface-container-lowest p-space-md sm:p-space-lg rounded-xl shadow-[0_12px_40px_-6px_rgba(42,20,180,0.12)]">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_month</span>
+<span class="font-label-lg text-on-surface font-bold">Check Availability</span>
+</div>
+<span class="font-label-sm text-tertiary-container bg-surface-container-low px-2.5 py-1 rounded-full font-semibold">Direct Best Rate</span>
+</div>
+<form class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs" onsubmit="event.preventDefault(); document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">
+<!-- Check-in -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-on-surface-variant font-medium" for="widget-checkin">Check-In</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" id="widget-checkin" type="date" value="2025-03-15"/>
+</div>
+</div>
+<!-- Check-out -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-on-surface-variant font-medium" for="widget-checkout">Check-Out</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" id="widget-checkout" type="date" value="2025-03-17"/>
+</div>
+</div>
+<!-- Guests -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-on-surface-variant font-medium" for="widget-guests">Guests</label>
+<div class="relative flex items-center">
+<select class="w-full h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all appearance-none" id="widget-guests">
+<option value="1">1 Guest</option>
+<option selected="" value="2">2 Guests</option>
+<option value="3">3 Guests</option>
+<option value="4+">Family / 4+ Guests</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 pointer-events-none text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Button -->
+<div class="sm:col-span-3 pt-space-xs">
+<button class="w-full h-12 rounded-xl bg-gradient-to-r from-primary-container via-secondary to-primary-container bg-[length:200%_auto] text-on-primary font-label-lg font-bold shadow-[0_4px_16px_rgba(6,182,212,0.3)] active:scale-98 transition-all flex items-center justify-center gap-space-xs hover:shadow-[0_0_20px_2px_rgba(6,182,212,0.4)]" type="submit">
+<span class="material-symbols-outlined text-[20px]">travel_explore</span>
+<span>Check Lakefront Availability</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- 2. ABOUT US SECTION (#about) -->
+<section class="px-margin-mobile pt-space-2xl flex flex-col gap-space-lg" id="about">
+<div class="flex flex-col gap-space-xs text-center max-w-xl mx-auto">
+<div class="inline-flex items-center justify-center gap-1 text-tertiary-container font-label-sm uppercase tracking-widest font-semibold">
+<span class="material-symbols-outlined text-[16px]">nature</span>
+<span>The Sanctuary Story</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold tracking-tight">
+        Welcome to Wewa Thaula Guest Inn
+      </h2>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+        Experience a relaxing getaway where comfort meets nature. Wewa Thaula Guest Inn offers a peaceful atmosphere near a beautiful lake, surrounded by natural beauty. Whether you are planning a family vacation, a romantic escape, or a relaxing holiday, we welcome you with comfortable accommodation and warm hospitality.
+      </p>
+</div>
+<!-- Split Visual Card -->
+<div class="flex flex-col gap-space-md">
+<div class="relative w-full h-64 sm:h-80 rounded-xl overflow-hidden shadow-md">
+<div class="w-full h-full bg-cover bg-center" data-alt="Scenic view of a tropical freshwater lake in Tissamaharama Sri Lanka with lush palm trees, distant mist on mountains, early morning mirror reflections, water lilies, peaceful nature sanctuary lodge setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-Z0T3cIbZKLF3KvF7hqZJX3Alvdc3IQ0vd0NdouFK6bSvJKuP-43xk4Bfg34kDaz5YCtDTPdiarKeJQiKyxEopNgwF3kz_czAGW63LXGBxrb3fFPKZxBE6asWS5rwlWkyFeYdBRpjOINEtPXN6mq6BkEzCHv0EZBfC3LhnQ0FQYqqlVk4gH2grrkPLXR7FSAqKAiclVCDFhBcNVMCI8a6H4bA1v4Tj90xo8YbbXDW')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-bright/90 backdrop-blur-md shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-label-sm text-primary font-bold uppercase tracking-wider">Lakefront Haven</span>
+</div>
+</div>
+<!-- 3 Distinct Feature Highlights -->
+<div class="grid grid-cols-1 gap-space-sm">
+<div class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="w-12 h-12 shrink-0 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[24px]">forest</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Peaceful Natural Surroundings</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed mt-0.5">
+              Lush lakefront breeze, tropical flora, bird songs, and uninterrupted morning mists create a true rejuvenating detox.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="w-12 h-12 shrink-0 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[24px]">bed</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Comfortable Accommodation</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed mt-0.5">
+              Plush bedding, modern fixtures, teak furnishings, and panoramic lake view balconies designed for deep slumber.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="w-12 h-12 shrink-0 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[24px]">sentiment_satisfied</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Friendly Hospitality</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed mt-0.5">
+              Warm, attentive, and personalized Sri Lankan guest service ensuring every family and couple feels effortlessly cherished.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. ROOMS & ACCOMMODATION SECTION (#rooms) -->
+<section class="px-margin-mobile pt-space-2xl flex flex-col gap-space-lg" id="rooms">
+<div class="flex flex-col gap-space-xs text-center max-w-lg mx-auto">
+<span class="font-label-sm uppercase tracking-widest text-primary font-bold">Unwind In Serenity</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold tracking-tight">Stay in Comfort</h2>
+<p class="font-body-md text-on-surface-variant">Find the perfect space to relax and enjoy your stay along the pristine shores.</p>
+</div>
+<div class="flex flex-col gap-space-lg">
+<!-- Card 1: Standard Lake View Room -->
+<article class="flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_8px_30px_-4px_rgba(67,56,202,0.06)] hover:shadow-lg transition-all duration-300">
+<div class="relative w-full h-56 overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 hover:scale-105" data-alt="Interior of a boutique hotel bedroom in Sri Lanka with floor-to-ceiling glass windows overlooking a serene lake and tropical forest, king-size bed with crisp white linen and woven headboard, wooden armchairs, wicker lamp shades, ambient morning light." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC7FzELIN-X6PCZjoKWDmwz2SP7BWxK1FQTs0lgc9gABehf1S-UYCQVPo4Sc_wcJyrOTtbgMnF3jixk4QAMg-c8PnKzQdcxevS0mOqjcrv8OfZEafmUBQk0-2leShLveWYjcz8cR_XMW7KayA4dJQ4nZS86U0crUyBoNi7hWqmpy0RmJSGvsHONAcdH1Aze-PksCgy3atJKkwz8L8us2qScSzpsP0WybELbSx13fqCu')"></div>
+<span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-bright/90 backdrop-blur-md text-on-surface font-label-sm font-bold shadow-sm">
+            Popular Choice
+          </span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Standard Lake View Room</h3>
+<div class="flex items-center gap-space-xs text-tertiary-container font-label-md mt-1">
+<span class="material-symbols-outlined text-[16px]">group</span>
+<span>2 Guests</span>
+<span class="text-outline-variant">•</span>
+<span class="material-symbols-outlined text-[16px]">single_bed</span>
+<span>1 Queen Bed</span>
+<span class="text-outline-variant">•</span>
+<span>Lake &amp; Garden View</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm">Free High-Speed WiFi</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm">Air Conditioning</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm">Hot Water Shower</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm">Private Balcony</span>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-xs">
+<a class="px-space-md py-2.5 rounded-xl bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-md font-semibold transition-colors" href="tel:0715588766">
+              View Details
+            </a>
+<a class="px-space-lg py-2.5 rounded-xl bg-gradient-to-r from-primary-container to-secondary text-on-primary font-label-md font-bold shadow-md hover:shadow-lg active:scale-95 transition-all" href="#contact">
+              Book Now
+            </a>
+</div>
+</div>
+</article>
+<!-- Card 2: Deluxe Lakefront Suite -->
+<article class="flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_8px_30px_-4px_rgba(67,56,202,0.06)] hover:shadow-lg transition-all duration-300">
+<div class="relative w-full h-56 overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 hover:scale-105" data-alt="Luxury boutique master bedroom suite in Sri Lanka overlooking a tranquil lake through full panoramic glass walls, high ceiling, artisan teak wooden furniture, warm woven pendant lights, large balcony facing pristine calm water." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGqUsdmg8tlXLAbYKz503apTQfm03m4nAnk3p_QVj1yhuv4dJ-UTqLw9ObnffDJp8RfUvj8URtkuizC7LOxsgr2j3cLPTSz5yr3RB8RDAmRU3AYK0zLcEX7NSV16-bDPTAdviLIKw8fYaqMmQNmj5-WTQnJ8POxiIFhS1E771HV0N8zjrCuYFuvREXlnZ-M5uXuVlf3NMs-3KibN4Aspu23LybDtY0Mhz6eUpZztcK')"></div>
+<span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-gradient-to-r from-primary-container to-secondary text-on-primary font-label-sm font-bold shadow-sm">
+            Best View
+          </span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Deluxe Lakefront Suite</h3>
+<div class="flex items-center gap-space-xs text-tertiary-container font-label-md mt-1">
+<span class="material-symbols-outlined text-[16px]">group</span>
+<span>2-3 Guests</span>
+<span class="text-outline-variant">•</span>
+<span class="material-symbols-outlined text-[16px]">king_bed</span>
+<span>1 King Bed</span>
+<span class="text-outline-variant">•</span>
+<span>Panoramic Lakefront</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm">Private Terrace</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm">AC &amp; Ceiling Fan</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm">Tea/Coffee Station</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm">Luxury En-suite Bath</span>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-xs">
+<a class="px-space-md py-2.5 rounded-xl bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-md font-semibold transition-colors" href="tel:0715588766">
+              View Details
+            </a>
+<a class="px-space-lg py-2.5 rounded-xl bg-gradient-to-r from-primary-container to-secondary text-on-primary font-label-md font-bold shadow-md hover:shadow-lg active:scale-95 transition-all" href="#contact">
+              Book Now
+            </a>
+</div>
+</div>
+</article>
+<!-- Card 3: Family Lake Pavilion -->
+<article class="flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_8px_30px_-4px_rgba(67,56,202,0.06)] hover:shadow-lg transition-all duration-300">
+<div class="relative w-full h-56 overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 hover:scale-105" data-alt="Spacious family suite in an eco-lodge resort in Sri Lanka, two queen beds with white linens, polished concrete floors, handcrafted wooden dining nook, direct view and sliding doors onto a lush lakeside lawn." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDW2_MoBxBDlYHmBC-wKIEzLWwRcx-uqMmR_6rfINsbXe1PPgtji14o76FAuXGv6913SbLEg2m5WlAUavw3j9yV0M4FgMhHWNWOk7u8eSMpy20I04kquf9FsCMdy4ni5kCK8N4GKrnfmUnteboQDalRYPkaMOgOp45_y8iPmklVzSHUSpCEcoLKBwV0gsxic_uW8JpOuiMCDqp4-Rg4Qo_JdXWw_e30iMRRlexfmLyR')"></div>
+<span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-bright/90 backdrop-blur-md text-on-surface font-label-sm font-bold shadow-sm">
+            Spacious
+          </span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Family Lake Pavilion</h3>
+<div class="flex items-center gap-space-xs text-tertiary-container font-label-md mt-1">
+<span class="material-symbols-outlined text-[16px]">groups</span>
+<span>4-5 Guests</span>
+<span class="text-outline-variant">•</span>
+<span class="material-symbols-outlined text-[16px]">bed</span>
+<span>2 Queen Beds</span>
+<span class="text-outline-variant">•</span>
+<span>Garden &amp; Lake Access</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm">Spacious Living Area</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm">Dining Table</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm">Mini Refrigerator</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm">En-suite Bathroom</span>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-xs">
+<a class="px-space-md py-2.5 rounded-xl bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-md font-semibold transition-colors" href="tel:0715588766">
+              View Details
+            </a>
+<a class="px-space-lg py-2.5 rounded-xl bg-gradient-to-r from-primary-container to-secondary text-on-primary font-label-md font-bold shadow-md hover:shadow-lg active:scale-95 transition-all" href="#contact">
+              Book Now
+            </a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 4. DINING & RESTAURANT SECTION (#dining) -->
+<section class="px-margin-mobile pt-space-2xl flex flex-col gap-space-lg" id="dining">
+<div class="flex flex-col gap-space-xs text-center max-w-lg mx-auto">
+<span class="font-label-sm uppercase tracking-widest text-primary font-bold">Lakeside Gastronomy</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold tracking-tight">Delicious Meals, Memorable Moments</h2>
+<p class="font-body-md text-on-surface-variant">Enjoy satisfying meals in a peaceful and welcoming atmosphere overlooking the lake.</p>
+</div>
+<!-- Hero Food Photo Banner -->
+<div class="relative w-full h-72 rounded-xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center" data-alt="An abundant authentic Sri Lankan rice and curry spread laid out on banana leaves in clay earthenware dishes on a rustic wooden table by the lake. Fish curry, dhal, fresh coconut pol sambol, hoppers, papadums, and sliced tropical papaya and mango under warm tropical daylight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAruttE_8djYTdjvMUzeARWBdxK6mumQUmKrzSpKwLd8-FqztciE2OECqiqRfrGdey-IWBbUXH3kJDX8wKepXyB6sRjtoeeAj4QbDOFdGs0-I12d9P1Q95eiPWoS8I91jkCvfEKREGQF01VncorAazF44gVHp9xPIe77b2m6PQs-R_nsB6NF7DpgR7UfroOFXvrwEcuaQRhDDZkT3rhI-8OBpT1791Gf89caGhzQ4dH')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex items-end justify-between">
+<div class="flex flex-col text-surface-bright">
+<span class="font-label-sm uppercase tracking-widest text-tertiary-fixed font-semibold">Traditional Flavors</span>
+<span class="font-headline-md text-headline-md font-semibold">Authentic Lake Dining</span>
+</div>
+<a class="px-space-md py-2 rounded-full bg-gradient-to-r from-primary-container to-secondary text-on-primary font-label-md font-bold shadow-md active:scale-95 transition-all" href="tel:0715588766">
+          Book a Meal
+        </a>
+</div>
+</div>
+<!-- 3 Culinary Feature Highlights -->
+<div class="grid grid-cols-1 gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-md shadow-sm">
+<div class="w-11 h-11 shrink-0 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[22px]">eco</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Freshly Prepared Meals</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed">
+            Farm-to-table local ingredients, fresh lake fish, and organic regional vegetables harvested daily for vibrant nourishment.
+          </p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-md shadow-sm">
+<div class="w-11 h-11 shrink-0 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[22px]">soup_kitchen</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Authentic Sri Lankan Cuisine</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed">
+            Traditional clay-pot curries, fragrant tempered dhal, crispy hoppers, pol sambol, and sweet coconut rotis cooked to perfection.
+          </p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-md shadow-sm">
+<div class="w-11 h-11 shrink-0 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[22px]">restaurant</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Breakfast, Lunch &amp; Dinner</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed">
+            Flexible meal packages served at our open-air lakeside dining pavilion or delivered privately to your room terrace.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. NATURE & EXPERIENCE SECTION (#nature) -->
+<section class="px-margin-mobile pt-space-2xl flex flex-col gap-space-lg" id="nature">
+<div class="flex flex-col gap-space-xs text-center max-w-lg mx-auto">
+<span class="font-label-sm uppercase tracking-widest text-primary font-bold">Immersive Sanctuary</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold tracking-tight">Surrounded by Nature</h2>
+<p class="font-body-md text-on-surface-variant">Wake up to peaceful surroundings, enjoy the beauty of the lake, and experience the relaxing atmosphere of nature.</p>
+</div>
+<!-- 4 Experience Cards Bento Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Exp 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-all">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">water</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tranquil Lake Views</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed mt-1">
+            Sunrise serenity over mist-covered waters with golden reflections that slow down time.
+          </p>
+</div>
+</div>
+<!-- Exp 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-all">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">cruelty_free</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tropical Flora &amp; Bird Watching</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed mt-1">
+            Encounter vibrant kingfishers, graceful egrets, lotus blossoms, and fluttering endemic butterflies.
+          </p>
+</div>
+</div>
+<!-- Exp 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-all">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">deck</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Lakeside Pier Relaxation</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed mt-1">
+            Wooden boardwalk lounges for tranquil Ceylon tea mornings and serene sunset contemplations.
+          </p>
+</div>
+</div>
+<!-- Exp 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-all">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">hiking</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Authentic Village Excursions</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed mt-1">
+            Gentle strolls along ancient irrigation tank bunds, interacting with friendly local villagers.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. PHOTO GALLERY SECTION (#gallery) -->
+<section class="px-margin-mobile pt-space-2xl flex flex-col gap-space-lg" id="gallery">
+<div class="flex flex-col gap-space-xs text-center max-w-lg mx-auto">
+<span class="font-label-sm uppercase tracking-widest text-primary font-bold">Visual Journey</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold tracking-tight">Explore Our Surroundings</h2>
+<p class="font-body-md text-on-surface-variant">A glimpse of the tranquil haven awaiting your arrival.</p>
+</div>
+<!-- Gallery Filter Chips -->
+<div class="flex items-center justify-center gap-space-xs flex-wrap">
+<button class="gallery-pill px-4 py-1.5 rounded-full bg-primary-container text-on-primary font-label-md font-bold shadow-sm transition-all" onclick="filterGallery('all', this)">All</button>
+<button class="gallery-pill px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md font-medium transition-all hover:bg-surface-container-highest" onclick="filterGallery('lake', this)">Lake Scenery</button>
+<button class="gallery-pill px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md font-medium transition-all hover:bg-surface-container-highest" onclick="filterGallery('rooms', this)">Rooms</button>
+<button class="gallery-pill px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md font-medium transition-all hover:bg-surface-container-highest" onclick="filterGallery('dining', this)">Dining</button>
+</div>
+<!-- Gallery Grid -->
+<div class="grid grid-cols-2 gap-space-sm" id="gallery-container">
+<!-- Item 1: Lake Pier -->
+<div class="gallery-item relative aspect-square rounded-xl overflow-hidden cursor-pointer group shadow-sm" data-category="lake" onclick="openLightbox('placeholder', 'Sunrise over the Wooden Pier at Wewa Thaula')">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Scenic wooden deck pier overlooking a tranquil misty lake at sunrise with palm trees in Sri Lanka, warm golden sky reflecting on calm water, serene holiday retreat." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyM1JGjrALQVFwWsnEGjijFE7ZZA5V5NC1dM73qzJyy3flggDgClNlSnYq9Mw-Cx_zakiU7YXI1YspU0rz9iV8UTlWVqsKTuFr9eFGO8uM3l9oDs3H6dEl2yT5rkpFwOeHW8wbI_kp_ykVe1fwRWumuesXa10HqKQzCgok9kHgScreDgf_EluifmKyj9VIAVwwkG-3KjAcI78KI1k9T0U5CVOmQwT6Ffj-HJs0oMqM')"></div>
+<div class="absolute inset-0 bg-inverse-surface/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-surface-bright text-[28px]">zoom_in</span>
+</div>
+</div>
+<!-- Item 2: Master Suite Interior -->
+<div class="gallery-item relative aspect-square rounded-xl overflow-hidden cursor-pointer group shadow-sm" data-category="rooms" onclick="openLightbox('placeholder', 'Deluxe Room Lake View Interior')">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Warm boutique guest room bedroom in Sri Lanka with full floor-to-ceiling lake view glass windows, rattan ceiling lamp, teak wooden furniture, plush white bedding." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAqH-8-57J50DcZd6HM4ctEzvQhBHhK0O6lnbMQfSwT6hGwuZ7479UBRExVLLjppU-O8lOfnxq6cKUtxBusOoSRauf_N5uHzAhu5VCBiSVBC6pNSK9yN2Sc03UXmTbcZjrXQa7OVFTFwXiTzKRK6v9Txq7nJq46oy6l88IDB1xlwgHSON4Bw60Tk1v-YEuGAytQcStRKe3Vk-lePDhrZqikLZmvU-fUxLqgcaEoCYaG')"></div>
+<div class="absolute inset-0 bg-inverse-surface/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-surface-bright text-[28px]">zoom_in</span>
+</div>
+</div>
+<!-- Item 3: Traditional Feast -->
+<div class="gallery-item relative aspect-square rounded-xl overflow-hidden cursor-pointer group shadow-sm" data-category="dining" onclick="openLightbox('placeholder', 'Authentic Sri Lankan Clay Pot Lunch')">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Rich traditional Sri Lankan rice and curry lunch served in clay pots with fish curry, pol sambol, hoppers, and tropical fruits on a wooden table beside the lake." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8kuce24EfaWBMnE4MtXWyyljrVOcfpj5nUOHYNrY_MVhCT6PGGLOlFjBb0BMUD8gyBTOADNYHL5lDeb0jDwN9lOGjtHt00CVn37RBQwncdXPg_Fp7Rg44PMfj3EfIDBmVEztdmx0MN06P3PYfvkJx3Wy8_amQkgTGpnEmtYEh7lPQe_tCqKqa73OEhb8cW3iGsSKOStf5W1AvPTIfr_1NnBvfTWXBFfCF0jINY68z')"></div>
+<div class="absolute inset-0 bg-inverse-surface/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-surface-bright text-[28px]">zoom_in</span>
+</div>
+</div>
+<!-- Item 4: Sunset Pier Twilight -->
+<div class="gallery-item relative aspect-square rounded-xl overflow-hidden cursor-pointer group shadow-sm" data-category="lake" onclick="openLightbox('placeholder', 'Twilight Reflections on the Lake')">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Serene twilight scenery over Sri Lankan lake with subtle purple and deep indigo hues reflecting on still water, silhouettes of coconut palms, quiet evening peace." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAE1jRsiCRjhPJiVSFXUsZknM9Jimq-jwSTzx6ieLRu5RRLtiJIxsC5ViYvgh3ZLEnkkWWeD9L5UzvCqmAETU5oFWMp9ewJDvS0NcNwiujQqm-J4GJ_dZcGj_BByxnCfK_Wf2DcmkQY1YN4zkp1cBhyjC803GwBDxcA_o_CHUI4uAAUqzpneUcGWLmgrf5b8KG031MswpXzk1tjSaSkXpy4YpZuoU0O3eU3Vc8xn0w8')"></div>
+<div class="absolute inset-0 bg-inverse-surface/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-surface-bright text-[28px]">zoom_in</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. WHY CHOOSE US SECTION (#why-us) -->
+<section class="px-margin-mobile pt-space-2xl flex flex-col gap-space-lg" id="why-us">
+<div class="flex flex-col gap-space-xs text-center max-w-lg mx-auto">
+<span class="font-label-sm uppercase tracking-widest text-primary font-bold">The Guest Experience</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold tracking-tight">Why Guests Choose Wewa Thaula</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex items-start gap-space-md shadow-sm">
+<div class="w-12 h-12 shrink-0 rounded-full bg-primary-fixed flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">pin_drop</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Peaceful Location</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed mt-1">
+            Enjoy a relaxing stay close to nature and the tranquil lake, free from urban commotion.
+          </p>
+</div>
+</div>
+<!-- 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex items-start gap-space-md shadow-sm">
+<div class="w-12 h-12 shrink-0 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">hotel</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Comfortable Rooms</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed mt-1">
+            Relax in clean, welcoming, and thoughtfully designed accommodation with cozy linens.
+          </p>
+</div>
+</div>
+<!-- 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex items-start gap-space-md shadow-sm">
+<div class="w-12 h-12 shrink-0 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">restaurant_menu</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Delicious Meals</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed mt-1">
+            Savor freshly prepared authentic home-style Sri Lankan dishes cooked with heart.
+          </p>
+</div>
+</div>
+<!-- 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex items-start gap-space-md shadow-sm">
+<div class="w-12 h-12 shrink-0 rounded-full bg-primary-fixed-dim flex items-center justify-center text-on-primary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[24px]">handshake</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Friendly Service</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed mt-1">
+            Experience warm, genuine, and attentive personalized hospitality from our dedicated team.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. LOCATION SECTION (#location) -->
+<section class="px-margin-mobile pt-space-2xl flex flex-col gap-space-lg" id="location">
+<div class="flex flex-col gap-space-xs text-center max-w-lg mx-auto">
+<span class="font-label-sm uppercase tracking-widest text-primary font-bold">Directions &amp; Area</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold tracking-tight">Find Your Peaceful Escape</h2>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+        Nestled in serene natural surroundings bordering the gentle waters of the lake in Sri Lanka, Wewa Thaula Guest Inn is your sanctuary away from the hustle of city life.
+      </p>
+</div>
+<!-- Map Card Container -->
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_8px_30px_-4px_rgba(67,56,202,0.08)]">
+<!-- Google Static Map Integration Pipeline -->
+<div class="w-full h-64 bg-cover bg-center relative" data-location="Tissamaharama Lake, Sri Lanka" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAzwoSd2bU7TIfcDjNWRLLdOC25t__-sFwV5ViULSunrPh3b7BeN-y0GI04ihgF46XWqI8nf4QgxdEpvgQM2aw8wvmuukncTdQE9CY7t58Y3r87q8MBeXrFdf7hAQHdfi8pFcqo943hBwEqu1gOjw8ubRMs7XDXPwc418GlW_iEncxcjaateN94iRCxR1jiYsfTXapmysU8Glc6VPNHqVB5xKMBNXfbLu8s9EDn2o_c')">
+<!-- Map Pin Overlay Marker -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="flex flex-col items-center animate-bounce">
+<div class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm font-bold shadow-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">water_lux</span>
+<span>Wewa Thaula</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[32px] -mt-1 drop-shadow-md">location_on</span>
+</div>
+</div>
+</div>
+<!-- Location Card Footer Details -->
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">near_me</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Lakeside Sanctuary, Tissamaharama</span>
+<span class="font-body-sm text-on-surface-variant">Bordering tranquil lake bunds, Southern Province, Sri Lanka</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<span class="font-label-sm text-tertiary-container bg-surface-container-low px-3 py-1.5 rounded-full font-medium">
+            30 mins to Yala National Park Safari
+          </span>
+<a class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-xl bg-primary text-on-primary font-label-md font-bold active:scale-95 transition-all shadow-sm" href="https://maps.google.com/?q=Tissamaharama+Sri+Lanka" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+<span>Get Directions</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. CONTACT & BOOKING SECTION (#contact) -->
+<section class="px-margin-mobile pt-space-2xl flex flex-col gap-space-lg" id="contact">
+<div class="flex flex-col gap-space-xs text-center max-w-lg mx-auto">
+<span class="font-label-sm uppercase tracking-widest text-primary font-bold">Start Your Journey</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold tracking-tight">Plan Your Stay With Us</h2>
+<p class="font-body-md text-on-surface-variant">We would love to welcome you. Contact us to reserve your room or arrange delicious authentic meals.</p>
+</div>
+<!-- Quick Clickable Phone Contact Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<a class="p-space-md rounded-xl bg-surface-container-low hover:bg-primary-fixed transition-colors flex items-center justify-between shadow-sm active:scale-98" href="tel:0715588766">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[20px]">phone</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm uppercase text-on-surface-variant tracking-wider font-semibold">Primary Reservation Line</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">071 558 8766</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">arrow_forward</span>
+</a>
+<a class="p-space-md rounded-xl bg-surface-container-low hover:bg-primary-fixed transition-colors flex items-center justify-between shadow-sm active:scale-98" href="tel:0773682266">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary shadow-sm">
+<span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm uppercase text-on-surface-variant tracking-wider font-semibold">Secondary Hotline</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">077 368 2266</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">arrow_forward</span>
+</a>
+</div>
+<!-- Quick CTAs -->
+<div class="flex items-center justify-center gap-space-xs flex-wrap">
+<a class="px-space-md py-2 rounded-full bg-surface-container-high text-on-surface font-label-md font-semibold hover:bg-surface-container-highest transition-colors flex items-center gap-1.5" href="tel:0715588766">
+<span class="material-symbols-outlined text-[16px] text-primary">call</span>
+<span>Call Now</span>
+</a>
+<button class="px-space-md py-2 rounded-full bg-surface-container-high text-on-surface font-label-md font-semibold hover:bg-surface-container-highest transition-colors flex items-center gap-1.5" onclick="document.getElementById('booking-enquiry-form').scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined text-[16px] text-primary">hotel</span>
+<span>Book a Room</span>
+</button>
+<button class="px-space-md py-2 rounded-full bg-surface-container-high text-on-surface font-label-md font-semibold hover:bg-surface-container-highest transition-colors flex items-center gap-1.5" onclick="document.getElementById('type-meals').click(); document.getElementById('booking-enquiry-form').scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined text-[16px] text-primary">restaurant</span>
+<span>Reserve a Meal</span>
+</button>
+</div>
+<!-- Functional Booking Enquiry Form Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-[0_12px_45px_-10px_rgba(42,20,180,0.12)]" id="booking-enquiry-form">
+<div class="flex flex-col gap-1 pb-space-md">
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Direct Reservation Enquiry</h3>
+<p class="font-body-sm text-on-surface-variant">Fill in your preferred dates below and our team will immediately get in touch.</p>
+</div>
+<form class="flex flex-col gap-space-md" id="stay-enquiry-form" onsubmit="handleFormSubmit(event)">
+<!-- Full Name -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-on-surface font-semibold" for="guest-name">Full Name *</label>
+<input class="w-full h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_rgba(6,182,212,0.4)] transition-all" id="guest-name" placeholder="e.g. Kasun Fernando" required="" type="text"/>
+</div>
+<!-- Phone & Email -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-on-surface font-semibold" for="guest-phone">Phone Number / WhatsApp *</label>
+<input class="w-full h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_rgba(6,182,212,0.4)] transition-all" id="guest-phone" placeholder="07X XXX XXXX" required="" type="tel"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-on-surface font-semibold" for="guest-email">Email Address (Optional)</label>
+<input class="w-full h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_rgba(6,182,212,0.4)] transition-all" id="guest-email" placeholder="youremail@example.com" type="email"/>
+</div>
+</div>
+<!-- Booking Type Pills -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-on-surface font-semibold">Booking Interest</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="flex items-center justify-center p-2 rounded-lg bg-surface-container-low text-on-surface font-label-md cursor-pointer has-[:checked]:bg-primary-container has-[:checked]:text-on-primary transition-all text-center">
+<input checked="" class="sr-only" name="booking_type" type="radio" value="Room Stay"/>
+<span>Room Stay</span>
+</label>
+<label class="flex items-center justify-center p-2 rounded-lg bg-surface-container-low text-on-surface font-label-md cursor-pointer has-[:checked]:bg-primary-container has-[:checked]:text-on-primary transition-all text-center">
+<input class="sr-only" id="type-meals" name="booking_type" type="radio" value="Dining / Meals"/>
+<span>Meals Only</span>
+</label>
+<label class="flex items-center justify-center p-2 rounded-lg bg-surface-container-low text-on-surface font-label-md cursor-pointer has-[:checked]:bg-primary-container has-[:checked]:text-on-primary transition-all text-center">
+<input class="sr-only" name="booking_type" type="radio" value="Both"/>
+<span>Stay &amp; Dine</span>
+</label>
+</div>
+</div>
+<!-- Dates & Guests -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-on-surface font-semibold" for="form-checkin">Check-In</label>
+<input class="w-full h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" id="form-checkin" type="date" value="2025-03-15"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-on-surface font-semibold" for="form-checkout">Check-Out</label>
+<input class="w-full h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" id="form-checkout" type="date" value="2025-03-17"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-on-surface font-semibold" for="form-guests">Guests</label>
+<div class="relative flex items-center">
+<select class="w-full h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all appearance-none" id="form-guests">
+<option value="1">1 Guest</option>
+<option selected="" value="2">2 Guests</option>
+<option value="3">3 Guests</option>
+<option value="4+">4+ Guests / Family</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 pointer-events-none text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Special Request -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-on-surface font-semibold" for="guest-requests">Special Requests / Notes</label>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_rgba(6,182,212,0.4)] transition-all resize-none" id="guest-requests" placeholder="Tell us about safari tour requirements, dietary preferences, or arrival timings..." rows="3"></textarea>
+</div>
+<!-- Submit Button -->
+<button class="w-full h-14 rounded-xl bg-gradient-to-r from-primary-container via-secondary to-primary-container bg-[length:200%_auto] text-on-primary font-label-lg font-bold shadow-[0_4px_20px_rgba(6,182,212,0.35)] active:scale-98 transition-all flex items-center justify-center gap-2 hover:shadow-[0_0_25px_3px_rgba(6,182,212,0.45)]" id="enquiry-submit-btn" type="submit">
+<span class="material-symbols-outlined text-[22px]">send</span>
+<span>Send Booking Enquiry</span>
+</button>
+<!-- Availability Note / Trust Banner -->
+<div class="flex items-start gap-space-xs p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-tertiary-container text-[20px] mt-0.5">verified_user</span>
+<p class="font-body-sm text-on-surface-variant text-[12px] leading-relaxed">
+<strong class="text-on-surface font-semibold">Availability Note:</strong> We will review your enquiry promptly and get back to you via phone or WhatsApp to confirm room availability and booking details.
+          </p>
+</div>
+</form>
+<!-- Confirmation Toast (Hidden initially) -->
+<div class="hidden mt-space-md p-space-md rounded-xl bg-tertiary text-on-tertiary flex items-center gap-space-sm shadow-lg" id="enquiry-toast">
+<span class="material-symbols-outlined text-[24px] text-tertiary-fixed">check_circle</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-lg font-bold">Enquiry Received!</span>
+<span class="font-body-sm text-tertiary-fixed">Ayubowan! We will call you within a few hours to finalize your reservation.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Lightbox Modal -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/85 backdrop-blur-md hidden flex-col items-center justify-center p-margin-mobile" id="gallery-lightbox">
+<button aria-label="Close Lightbox" class="absolute top-4 right-4 w-11 h-11 rounded-full bg-surface-bright/20 hover:bg-surface-bright/30 text-surface-bright flex items-center justify-center active:scale-95 transition-all" onclick="closeLightbox()">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+<div class="relative max-w-lg w-full flex flex-col items-center gap-space-sm">
+<img alt="Gallery Preview" class="w-full max-h-[618px] object-contain rounded-xl shadow-2xl" id="lightbox-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP9Hvaf9AkwTjK0Qj9pdExmH2GAUOO1cMY1C4M_hYa5dsP0sJG7flUbzmCXfWYwGMe8rKkCs2NjtYZq1hwFLo4pKYd30t21arxBgTup-b9PLp67whVbwLcoJK0veOuSu_7qNGVw8Tn3u5tK_nPW0GYK3gGx55TyqyjfXsxJIuUk-XPo5kTKgVCvHCroSSqwjwyqkYS-iz9kz30ln5a4KqPk3OS9r_RGj7E6kNEb_C6"/>
+<p class="font-headline-md text-headline-sm text-surface-bright text-center" id="lightbox-caption"></p>
+</div>
+</div>
+</div>
+<!-- Vanilla JS for Micro-Interactions -->
+<script>
+  function openLightbox(src, caption) {
+    const lb = document.getElementById('gallery-lightbox');
+    const img = document.getElementById('lightbox-img');
+    const cap = document.getElementById('lightbox-caption');
+    if (lb && img && cap) {
+      img.src = src;
+      cap.textContent = caption;
+      lb.classList.remove('hidden');
+      lb.classList.add('flex');
+    }
+  }
+
+  function closeLightbox() {
+    const lb = document.getElementById('gallery-lightbox');
+    if (lb) {
+      lb.classList.add('hidden');
+      lb.classList.remove('flex');
+    }
+  }
+
+  function filterGallery(category, btn) {
+    // Update button states
+    document.querySelectorAll('.gallery-pill').forEach(el => {
+      el.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold');
+      el.classList.add('bg-surface-container-high', 'text-on-surface', 'font-medium');
+    });
+    btn.classList.add('bg-primary-container', 'text-on-primary', 'font-bold');
+    btn.classList.remove('bg-surface-container-high', 'text-on-surface', 'font-medium');
+
+    // Filter items
+    const items = document.querySelectorAll('.gallery-item');
+    items.forEach(item => {
+      if (category === 'all' || item.getAttribute('data-category') === category) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const submitBtn = document.getElementById('enquiry-submit-btn');
+    const toast = document.getElementById('enquiry-toast');
+    
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">autorenew</span><span>Processing...</span>';
+    }
+
+    setTimeout(() => {
+      if (submitBtn) {
+        submitBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">done</span><span>Enquiry Sent</span>';
+      }
+      if (toast) {
+        toast.classList.remove('hidden');
+      }
+    }, 800);
+  }
+</script><footer class="mt-space-2xl bg-[#172033] text-inverse-on-surface px-gutter-mobile py-space-xl"><div class="flex flex-col gap-space-lg max-w-lg mx-auto"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><img alt="Wewa Thaula Guest Inn Logo" class="h-8 w-auto object-contain brightness-200 contrast-125" src="https://lh3.googleusercontent.com/aida/ALJJyrDtRyZvlff47zC9wWr3del62hpKCUyyP-FYcqQ6hHTw08_AK7_HW5CgMJhdLmxG0x4BpRkUgqoW0uvvhrAzuxcNz62qCzotIxka6YlPAYo_HsLISsvwDPOVaEOPl0fp1PR0ukFIMmpBTs0dXUDHiwJk817ErfGTlOnP6MBqoGLvHWLcJWv1yUB68H2n8HUMHqBWDvj1NMdHxcTTUXwNidSxL9iEMT67ElfNe1rHlc9EQA"/><h3 class="font-headline-md text-headline-sm text-surface-bright font-bold">Wewa Thaula Guest Inn</h3></div><p class="font-headline-lg italic text-body-md text-surface-container-highest tracking-wide mt-space-xs">“Experience Nature. Enjoy Comfort. Create Memories.”</p></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm uppercase tracking-widest text-tertiary-fixed font-semibold">Direct Call Reservations</span><div class="flex flex-col sm:flex-row gap-space-sm pt-space-xs"><a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-xl bg-surface-container-highest/10 hover:bg-surface-container-highest/20 text-surface-bright font-label-lg transition-colors" href="tel:0715588766"><span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">call</span> 071 558 8766</a><a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-xl bg-surface-container-highest/10 hover:bg-surface-container-highest/20 text-surface-bright font-label-lg transition-colors" href="tel:0773682266"><span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">call</span> 077 368 2266</a></div></div><div class="grid grid-cols-2 gap-space-sm pt-space-xs"><a class="font-label-md text-surface-container-highest hover:text-tertiary-fixed transition-colors py-space-xs" data-path="rooms" href="#">Rooms &amp; Suites</a><a class="font-label-md text-surface-container-highest hover:text-tertiary-fixed transition-colors py-space-xs" data-path="dining" href="#">Lake Dining</a><a class="font-label-md text-surface-container-highest hover:text-tertiary-fixed transition-colors py-space-xs" data-path="location" href="#">Sanctuary Location</a><a class="font-label-md text-surface-container-highest hover:text-tertiary-fixed transition-colors py-space-xs" data-path="booking-enquiry" href="#">Booking Enquiry</a></div><div class="pt-space-md border-t border-surface-container-highest/15 flex flex-col gap-space-xs"><p class="font-body-sm text-[12px] text-surface-container-high/60">© 2024 Wewa Thaula Guest Inn. All Rights Reserved. Lakeside Sanctuary Tissamaharama.</p></div></div></footer></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-8px_30px_-4px_rgba(67,56,202,0.12)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-20 px-space-xs max-w-lg mx-auto"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 w-14 h-14 transition-all active:scale-95 text-primary font-bold" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">cottage</span><span class="font-label-sm text-[11px]">Home</span></a><a class="flex flex-col items-center justify-center gap-1 w-14 h-14 text-on-surface-variant transition-all hover:text-primary active:scale-95" data-path="rooms" href="#"><span class="material-symbols-outlined text-[24px]">king_bed</span><span class="font-label-sm text-[11px]">Rooms</span></a><a class="flex flex-col items-center justify-center gap-1 w-14 h-14 text-on-surface-variant transition-all hover:text-primary active:scale-95" data-path="dining" href="#"><span class="material-symbols-outlined text-[24px]">restaurant</span><span class="font-label-sm text-[11px]">Dining</span></a><a class="flex flex-col items-center justify-center gap-1 w-14 h-14 text-on-surface-variant transition-all hover:text-primary active:scale-95" data-path="location" href="#"><span class="material-symbols-outlined text-[24px]">explore</span><span class="font-label-sm text-[11px]">Location</span></a><div class="flex items-center gap-space-xs pl-space-xs"><a aria-label="Call Now" class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-container text-tertiary-container hover:bg-tertiary-fixed transition-all active:scale-95 shadow-sm" href="tel:0715588766"><span class="material-symbols-outlined text-[20px]">phone</span></a><a class="flex items-center justify-center px-space-md h-11 rounded-full bg-gradient-to-r from-primary-container to-secondary text-on-primary font-label-md font-semibold shadow-[0_4px_18px_rgba(6,182,212,0.32)] active:scale-95 transition-all" data-path="booking-enquiry" href="#"><span>Book</span></a></div></div></nav></body></html>
